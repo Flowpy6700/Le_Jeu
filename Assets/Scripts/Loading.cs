@@ -1,39 +1,26 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public static class Loading
+public class Loading : MonoBehaviour
 {
-    public enum Scene
+    [SerializeField]
+    private Image progressBar;
+    private void Start()
     {
-        Game,
-        Loading,
+        StartCoroutine(LoadAsyncOperation());
     }
 
-    private static Action onLoaderCallBack;
-
-    public static void Load(Scene scene)
+    IEnumerator LoadAsyncOperation()
     {
-        //action pour charger la scene
-        onLoaderCallBack = () =>
-        {
-            SceneManager.LoadScene(scene.ToString());
-        };
+        AsyncOperation gameLevel = SceneManager.LoadSceneAsync(2);
 
-        //charger la scene
-        SceneManager.s(Scene.Loading.ToString());
-    }
-
-    public static void LoaderCallBack()
-    {
-        //apres l update chargement de la nouvelle scene
-        if(onLoaderCallBack != null)
+        while(gameLevel.progress < 1)
         {
-            onLoaderCallBack();
-            onLoaderCallBack = null;
+            progressBar.fillAmount = gameLevel.progress;
+            yield return new WaitForEndOfFrame();
         }
-
     }
 }

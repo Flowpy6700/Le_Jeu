@@ -280,3 +280,19 @@ Received Import Request.
 Start importing Assets/Dypsloom using Guid(32afc46ca41d5da429716516e2a9c1e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8e1246cc35ef38fe5bd15929f24a522') in 0.003377 seconds 
   Import took 0.005512 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 1106.142064 seconds.
+  path: Assets/Scripts/Loading.cs
+  artifactKey: Guid(66dd7a9bbc14d4c459fab536c466f606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Loading.cs using Guid(66dd7a9bbc14d4c459fab536c466f606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dafee7163986e5edc44c667a41b0df1d') in 0.002752 seconds 
+  Import took 0.005092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001116 seconds.
+  path: Assets/Scripts/Loading.cs
+  artifactKey: Guid(66dd7a9bbc14d4c459fab536c466f606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Loading.cs using Guid(66dd7a9bbc14d4c459fab536c466f606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dafee7163986e5edc44c667a41b0df1d') in 0.002794 seconds 
+  Import took 0.004926 seconds .
+

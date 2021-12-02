@@ -11,7 +11,7 @@ public class LoaderCallback : MonoBehaviour
         if(isFirstUpdate)
         {
             isFirstUpdate = false;
-            Loading.LoaderCallback();
+            Loading.LoaderCallBack();
         }
     }
 }

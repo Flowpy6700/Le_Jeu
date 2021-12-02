@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public static class LoadScreen
+public static class Loading
 {
     public enum Scene
     {
@@ -23,7 +23,7 @@ public static class LoadScreen
         };
 
         //charger la scene
-        SceneManager.LoadScene(Scene.Loading.ToString());
+        SceneManager.s(Scene.Loading.ToString());
     }
 
     public static void LoaderCallBack()

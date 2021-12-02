@@ -1,0 +1,9 @@
+
+=== Thu Dec  2 09:11:49 2021
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.cinemachine@2.5.0
+  com.unity.postprocessing@2.3.0

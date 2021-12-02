@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,9 +9,31 @@ public static class LoadScreen
     public enum Scene
     {
         Game,
+        Loading,
     }
+
+    private static Action onLoaderCallBack;
+
     public static void Load(Scene scene)
     {
-        SceneManager.Loading(scene.ToString());
+        //action pour charger la scene
+        onLoaderCallBack = () =>
+        {
+            SceneManager.LoadScene(scene.ToString());
+        };
+
+        //charger la scene
+        SceneManager.LoadScene(Scene.Loading.ToString());
+    }
+
+    public static void LoaderCallBack()
+    {
+        //apres l update chargement de la nouvelle scene
+        if(onLoaderCallBack != null)
+        {
+            onLoaderCallBack();
+            onLoaderCallBack = null;
+        }
+
     }
 }

@@ -272,3 +272,11 @@ Received Import Request.
 Start importing Assets/Scripts/LoaderCallback.cs using Guid(f6fb548f656e40d49a2b10a335f701d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4a390f7a55db9a946fa33af26eb22bd') in 0.002812 seconds 
   Import took 0.004979 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 379.339800 seconds.
+  path: Assets/Dypsloom
+  artifactKey: Guid(32afc46ca41d5da429716516e2a9c1e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dypsloom using Guid(32afc46ca41d5da429716516e2a9c1e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8e1246cc35ef38fe5bd15929f24a522') in 0.003377 seconds 
+  Import took 0.005512 seconds .
+
